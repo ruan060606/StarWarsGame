@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars!</title>
+	<!-- reset   -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  
+</head>
+<body>
+<div id='container'>	
+	<div class="chooseCharBox">
+		<div type="button" class="char1" characterName='obi wan kanobi' health='120' attack='8' counterAttack="15">
+			<h3>obi wan kanobi</h3>
+			<img class="starImage" src="assets/images/obi.png">
+			<p>120</p>
+		</div>
+		<div type="button" class="char2" characterName='Luke Skywalker' health='100' attack='8' counterAttack="5">
+			<h3>Luke Skywalker</h3>
+			<img class="starImage" src="assets/images/luke.png">
+			<p>100</p>
+		</div>
+		<div type="button" class="char3" characterName='Darth Sidious' health='150' attack='8' counterAttack=" 20">
+			<h3>Darth Sidious</h3>
+			<img class="starImage" src="assets/images/sid.png">
+			<p>150</p>
+		</div>
+		<div type="button" class="char4" characterName='Darth Maul' health='180' attack='8' counterAttack=" 25">
+			<h3>Darth Maul</h3>
+			<img class="starImage" src="assets/images/maul.png">
+			<p>180</p>
+		</div>
+		<p1>Your Character</p1>
+	</div>
+		<br><br>
+	<div class="enemiesBox">
+		<div class="enemies"></div>
+		<p>Enemies Available to Attack</p>
+	</div>
+	
+	<div class="fightBox">
+		<div class="fight"></div>
+		<p>Fight Section</p>
+	</div>
+	<button class="attackBtn">Attack</button>
+	<div class="defenderBox">
+		<div class="defender">
+		</div>
+		<p>Defender</p>
+	</div>
+	<button class='resetBtn'>Reset</button>
+
+</div>
+</div>
+
+</body>
+<!-- jquery -->
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<!-- Javascript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
