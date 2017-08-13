@@ -14,43 +14,6 @@ var maulCount = 0;
 var disableBtn = true;
 /*When character 1 is clicked move the
   other characters to enimes section*/
-	$('.resetBtn').on('click',function(){
-		if(char1Count === true)
-		{
-			$(this).addClass('main');
-			obiCount++;
-			//Changes to false so Main character wont move to enemies area
-			char1Count = false;
-			// adds the characters that was not clicked to enemies section
-			$('.char2').appendTo('.enemiesBox').css({'height':'150px','width':'100px', 'background-color':'red'});
-			//Centers characters Health text
-			$('.char2 p').css({'margin-left': '30px'});
-			
-			$('.char3').appendTo('.enemiesBox').css({'height':'150px','width':'100px', 'background-color':'red'});
-			//Centers characters Health text
-			$('.char3 p').css({'margin-left': '30px'});
-			
-			$('.char4').appendTo('.enemiesBox').css({'height':'150px','width':'100px', 'background-color':'red'});
-			//Centers characters Health text
-			$('.char4 p').css({'margin-left': '30px'});
-			//Adjusted the css so they would appear the same as before it was clicked
-			$('.starImage').css({'width': '100px',
-								'height': '100px',
-								'margin-left': 'auto',
-								'margin-right': 'auto',
-								'display': 'block'});		
-		}
-		else if(char1Count === false && obiCount === 0)
-		{
-			//Enables attack button after defender is selected
-			lukeCount++;
-			sidCount++;
-			maulCount++;
-			disableBtn = false;
-			$('.char1').appendTo('.defenderBox').addClass("def").css({'background-color' : 'black','color':'white'});
-			$('.char1 p').css({'margin-left': '30px'});
-		}
-	});
 
 	$('.char1').on('click',function(){
 		if(char1Count === true)
